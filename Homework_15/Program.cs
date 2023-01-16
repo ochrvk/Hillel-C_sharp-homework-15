@@ -9,7 +9,7 @@ class MyClass<T> where T : IComparable<T>
         list.Add(t);
     }
 
-    public bool isGreaterOrEqual(T t)
+    public bool IsGreaterOrEqual(T t)
     {
         foreach (var item in list)
         {
@@ -36,6 +36,6 @@ class Program
         Console.Write("Enter value: ");
         int value = int.Parse(Console.ReadLine());
 
-        Console.WriteLine(myClass.isGreaterOrEqual(value));
+        Console.WriteLine(myClass.IsGreaterOrEqual(value));
     }
 }
